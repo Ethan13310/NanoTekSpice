@@ -1,0 +1,15 @@
+#clock test
+
+.chipsets:
+clock a
+input b
+
+output s
+
+4081 and
+
+.links:
+a:1 and:1
+b:1 and:2
+
+#and:3 s:1

@@ -1,0 +1,22 @@
+# Admiral Business Machines 1954-2042
+# One and gate
+
+.chipsets:
+input		i1
+input		i2
+input		i3
+input		i4
+
+output	 	s1
+output	 	s2
+
+4081		and
+
+.links:
+i1:1		and:1
+i2:1		and:2
+i3:1		and:5
+i4:1		and:6
+
+s1:1		and:3
+s2:1		and:4

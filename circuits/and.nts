@@ -1,0 +1,34 @@
+# Admiral Business Machines 1954-2042
+# One and gate
+
+ .chipsets:
+input		i1
+input		i2
+input		i3
+input		i4
+input		i5
+input		i6
+input		i7
+input		i8
+
+output	 	ouaiettoi
+output	 	salut
+output	 	cava
+output	 	mdr
+
+4081		and
+
+.links:
+i1:1		and:1
+i2:1		and:2
+i3:1		and:5
+i4:1		and:6
+i5:1		and:8
+i6:1		and:9
+i7:1		and:12
+i8:1		and:13
+
+salut:1		and:3
+ouaiettoi:1	and:4
+cava:1		and:11
+mdr:1		and:10
