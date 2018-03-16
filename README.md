@@ -1,6 +1,8 @@
 # NanoTekSpice
 [![GPLv3 licensed](https://img.shields.io/badge/license-GPLv3-blue.svg)](./LICENSE)
 
+![Nano](https://ethan.jp/images/git/nano.jpg)
+
 Second year Epitech project.
 
 The NanoTekSpice is a basic electronic circuit simulator. It loads a circuit from a configuration file and allows you to simulate its operation.
