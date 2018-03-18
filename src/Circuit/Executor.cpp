@@ -82,7 +82,7 @@ void nts::Executor::resetComputeState()
 }
 
 void nts::Executor::createComponent(Tree::Node const &node)
-{	
+{
 	std::map<std::string, CreateFunc> const factories{
 		{ "input", &Executor::createInput },
 		{ "output", &Executor::createOutput },
@@ -122,7 +122,7 @@ void nts::Executor::createInput(Chipset const &chipset)
 void nts::Executor::createOutput(Chipset const &chipset)
 {
 	std::shared_ptr<Output> output{ std::move(m_factory.createOutput()) };
-	
+
 	m_components[chipset.name()] = output;
 	m_outputs[chipset.name()] = output;
 }
@@ -130,7 +130,7 @@ void nts::Executor::createOutput(Chipset const &chipset)
 void nts::Executor::createTrue(Chipset const &chipset)
 {
 	std::shared_ptr<True> inputTrue{ std::move(m_factory.createTrue()) };
-	
+
 	m_components[chipset.name()] = inputTrue;
 	m_inputs[chipset.name()] = inputTrue;
 }
@@ -138,7 +138,7 @@ void nts::Executor::createTrue(Chipset const &chipset)
 void nts::Executor::createFalse(Chipset const &chipset)
 {
 	std::shared_ptr<False> inputFalse{ std::move(m_factory.createFalse()) };
-	
+
 	m_components[chipset.name()] = inputFalse;
 	m_inputs[chipset.name()] = inputFalse;
 }
@@ -146,7 +146,7 @@ void nts::Executor::createFalse(Chipset const &chipset)
 void nts::Executor::createClock(Chipset const &chipset)
 {
 	std::shared_ptr<Clock> clock{ std::move(m_factory.createClock(chipset.value())) };
-	
+
 	m_components[chipset.name()] = clock;
 	m_clocks[chipset.name()] = clock;
 	m_inputs[chipset.name()] = clock;

@@ -51,6 +51,6 @@ void nts::Output::display() const
 
 void nts::Output::display(std::string const &name) const
 {
-	std::cout << name;
+	std::cout << name << "=";
 	display();
 }
