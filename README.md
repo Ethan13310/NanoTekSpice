@@ -1,7 +1,7 @@
 # NanoTekSpice
 [![GPLv3 licensed](https://img.shields.io/badge/license-GPLv3-blue.svg)](./LICENSE)
 
-![Nano](https://ethan.jp/images/git/nano.jpg)
+![Nano](https://ethan.jp/images/nano.png)
 
 Second year Epitech project.
 
